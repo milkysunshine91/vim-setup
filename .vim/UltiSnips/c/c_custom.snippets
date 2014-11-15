@@ -1,0 +1,28 @@
+priority -50
+
+# switch
+snippet switch
+switch (${1:/* variable */}) {
+	case ${2:/* variable case */}:
+		${3}
+		${4:break;}${5}
+	default:
+		${6}
+}
+endsnippet
+
+# switch without default
+snippet switchndef
+switch (${1:/* variable */}) {
+	case ${2:/* variable case */}:
+		${3}
+		${4:break;}${5}
+}
+endsnippet
+
+# case
+snippet case
+case ${1:/* variable case */}:
+	${2}
+	${3:break;}
+endsnippet
